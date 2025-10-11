@@ -38,6 +38,7 @@ public class ItemGenerator : MonoBehaviour
             int x = Random.Range(-1, 2);
             int z = Random.Range(-1, 2);
             item.transform.position = new Vector3(x,4,z);
+            item.GetComponent<ItemController>().dropSpeed = speed;
         }
     }
 
